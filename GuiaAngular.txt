@@ -1,0 +1,1 @@
+-Los node_module no se suben al Git por su alto peso, por lo que tenemos que hacer en consola un: "npm install" dentro de la carpeta de angular-game-of-thrones cada vez que añadamos un modulo al trabajo para que nos funcionen todos.
