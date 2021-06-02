@@ -1,0 +1,14 @@
+-Git del proyecto: https://gitlab.com/antonio.rosales/game-of-thrones
+
+-Clone SSH: git@gitlab.com:antonio.rosales/game-of-thrones.git
+
+-Traer archivos (siempre que empecemos a trabajar y antes de terminar): git pull origin master
+
+-Añadir archivos al Commit: git add "archivo a subir"
+                            git add . (esto es para subir todo)
+
+-Hacer el commit con los archivos añadidos: git commit -m "Comentario de lo que vas a subir"
+
+-Comprobar el estado del Git para saber que hay pendiente de push y qué es lo que has commiteado: git status
+
+-Subir el commit al Gitlab: git push origin master
