@@ -11,17 +11,16 @@
   bottom: 0;
   left: 0;
   content: "";
-  &__icon-container{
+  &__icon-container {
     //   border: 1px solid white;
-      float: right;
-      margin-right: 64px;
-      margin-top: 19px;
-      
+    float: right;
+    margin-right: 64px;
+    margin-top: 19px;
   }
-  &__icon{
-      padding-right: 29px;
+  &__icon {
+    padding-right: 29px;
   }
-  &__home{
+  &__home {
     text-align: center;
     position: absolute;
     top: 40%;
@@ -33,18 +32,17 @@
     font-weight: 100;
     width: 2012px;
   }
-  &__link-container{
-      position: absolute;
-      bottom: 5%;
-      width: 100%;
-      display: flex;
-      justify-content:  space-around;
-      
+  &__link-container {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   &__links {
     font-size: 36px;
     color: white;
-    font-family:"Game of Thrones" ;  
+    font-family: "Game of Thrones";
+    text-decoration: none;
   }
-  
 }
