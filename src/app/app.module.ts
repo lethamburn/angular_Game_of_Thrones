@@ -10,6 +10,15 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CharactersPageComponent } from './pages/characters-page/characters-page.component';
 import { HousesPageComponent } from './pages/houses-page/houses-page.component';
 import { ChronologyPageComponent } from './pages/chronology-page/chronology-page.component';
+import { StylesComponent } from './styles/styles.component';
+import { ComponentsComponent } from './shared/components/components.component';
+import { ServicesComponent } from './shared/services/services.component';
+import { CharactersDetailComponent } from './pages/characters-page/characters-detail/characters-detail.component';
+import { HousesDetailComponent } from './pages/houses-page/houses-detail/houses-detail.component';
+import { ElementsComponent } from './styles/elements/elements.component';
+import { SettingsComponent } from './styles/settings/settings.component';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,16 @@ import { ChronologyPageComponent } from './pages/chronology-page/chronology-page
     HomePageComponent,
     CharactersPageComponent,
     HousesPageComponent,
-    ChronologyPageComponent
+    ChronologyPageComponent,
+    StylesComponent,
+    ComponentsComponent,
+    ServicesComponent,
+    CharactersDetailComponent,
+    HousesDetailComponent,
+    ElementsComponent,
+    SettingsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
