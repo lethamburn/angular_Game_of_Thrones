@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
 .main-content {
   background-image: url("../../../assets/image\ 1.png");
   background-size: cover;
@@ -10,5 +11,16 @@
   bottom: 0;
   left: 0;
   content: "";
-  z-index: 0;
+  &__home{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Game of Thrones";
+    font-size: 176px;
+    font-weight: 100;
+    width: 2012px;
+  }
 }
