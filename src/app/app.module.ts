@@ -43,7 +43,6 @@ import { FooterComponent } from './core/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule
-   /*  TranslateModule.forRoot() */
   ],
   providers: [],
   bootstrap: [AppComponent]
