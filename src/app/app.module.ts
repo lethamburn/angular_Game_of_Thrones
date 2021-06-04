@@ -19,6 +19,9 @@ import { ElementsComponent } from './styles/elements/elements.component';
 import { SettingsComponent } from './styles/settings/settings.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { GalleryComponent } from './shared/components/gallery/gallery.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -39,10 +42,13 @@ import { FooterComponent } from './core/footer/footer.component';
     SettingsComponent,
     HeaderComponent,
     FooterComponent,
+    GalleryComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
