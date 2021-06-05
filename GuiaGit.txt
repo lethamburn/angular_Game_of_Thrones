@@ -11,4 +11,4 @@
 
 -Comprobar el estado del Git para saber que hay pendiente de push y qué es lo que has commiteado: git status
 
--Subir el commit al Gitlab: git push origin master
+-Subir el commit al Gitlab: git push origin master.
