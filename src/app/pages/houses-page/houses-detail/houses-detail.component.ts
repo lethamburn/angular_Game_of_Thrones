@@ -16,9 +16,9 @@ export class HousesDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
-      const idHouse = params.get('idHouse');
+      const nameHouse = params.get('nameHouse');
       this.housesService
-      .getHouse(idHouse)
+      .getHouse(nameHouse)
       .subscribe((houseData) => {
         this.house = houseData;
       });

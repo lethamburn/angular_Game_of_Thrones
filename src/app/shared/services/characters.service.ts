@@ -5,9 +5,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CharactersService {
+
   constructor(private http: HttpClient) {}
 
+
   getCharacters() {
+    
     return this.http.get('https://api.got.show/api/show/characters/');
   }
 

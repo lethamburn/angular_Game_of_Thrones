@@ -16,9 +16,9 @@ export class CharactersDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
-      const idCharacter = params.get('idCharacter');
+      const nameCharacter = params.get('nameCharacter');
       this.charactersService
-        .getCharacter(idCharacter)
+        .getCharacter(nameCharacter)
        .subscribe((characterData) => {
           this.character = characterData;
         });

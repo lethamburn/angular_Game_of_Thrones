@@ -2,21 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HousesService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  getHouses() {
+    return this.http.get('https://api.got.show/api/show/houses/');
+  }
 
-
-getHouses() {
-
-  return this.http.get('https://api.got.show/api/show/houses/');
-}
-
-getHouse = (nameHouse: any) => {
-  return this.http.get(
-    `https://api.got.show/api/show/houses/${nameHouse}`
-  );
-};
+  getHouse = (nameHouse: any) => {
+    return this.http.get(`https://api.got.show/api/show/houses/${nameHouse}`);
+  };
 }

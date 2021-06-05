@@ -9,7 +9,8 @@ export class HousesGalleryComponent implements OnInit {
 
   constructor() { }
 
-  @Input() itemList: any[] = [];
+  @Input() itemList: any [] = [];
+  @Input() houses: any [] = [];
 
   ngOnInit(): void {
   }

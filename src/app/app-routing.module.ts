@@ -10,9 +10,9 @@ import { HousesPageComponent } from './pages/houses-page/houses-page.component';
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'characters', component: CharactersPageComponent },
-  { path: 'characters/:idCharacter', component: CharactersDetailComponent },
+  { path: 'characters/:nameCharacter', component: CharactersDetailComponent },
   { path: 'houses', component: HousesPageComponent },
-  { path: 'houses/:idHouse', component: HousesDetailComponent },
+  { path: 'houses/:nameHouse', component: HousesDetailComponent },
   { path: 'chronology', component: ChronologyPageComponent }
 ];
 
