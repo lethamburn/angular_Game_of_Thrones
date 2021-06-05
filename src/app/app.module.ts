@@ -22,6 +22,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HousesGalleryComponent } from './shared/components/houses-gallery/houses-gallery.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { HousesGalleryComponent } from './shared/components/houses-gallery/house
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
