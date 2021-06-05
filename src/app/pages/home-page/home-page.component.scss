@@ -1,24 +1,20 @@
 @import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
 .main-content {
-  background-image: url("../../../assets/image\ 1.png");
+  background-image: url("../../../assets/image-1.png");
   background-size: cover;
+  background-position:top center;
   background-repeat: no-repeat;
-  position: fixed;
-  background-attachment: scroll;
-  background-position: 50% 50%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
+  background-attachment:fixed;
+  width:100vw;
+  height: 100vh;
+  
   &__icon-container {
     //   border: 1px solid white;
     float: right;
-    margin-right: 64px;
-    margin-top: 19px;
+
   }
   &__icon {
-    padding-right: 29px;
+    padding: 30px 25px 0 0;
   }
   &__home {
     text-align: center;
@@ -30,7 +26,7 @@
     font-family: "Game of Thrones";
     font-size: 176px;
     font-weight: 100;
-    width: 2012px;
+  
   }
   &__link-container {
     position: absolute;
@@ -45,4 +41,24 @@
     font-family: "Game of Thrones";
     text-decoration: none;
   }
+}
+
+
+
+@media screen and (max-width:576px) {
+  .main-content__home{
+    font-size:50px !important;
+  }
+  .main-content__links{
+    font-size:18px !important;
+    }
+  span.phone::before {
+     content:"\A"; 
+     white-space: pre;
+     
+  }
+  .main-content__icon-container img{
+    width: 10%;
+    padding: 15px 5px 0 0;
+    }
 }

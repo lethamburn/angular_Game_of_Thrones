@@ -1,2 +1,62 @@
 
-@import 'app/styles/settings/body.settings'
+@import 'app/styles/settings/body.settings';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    background-color: black  !important;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .main-content__home{
+      font-size:80px !important;
+    }
+    .main-content__links{
+      font-size:20px !important;
+      }
+    span.phone::before {
+       content:"\A"; 
+       white-space: pre;
+       
+    }
+    .main-content__icon-container img{
+      width: 30%;
+      padding: 15px 5px 0 0;
+      }
+  }
+  
+
+@media screen and (max-width:992px ) {
+  .main-content__home{
+    font-size:120px !important;
+    }
+    .main-content__links{
+    font-size:30px !important;
+    }
+    span.phone::before {
+      content:"\A"; 
+      white-space: pre;
+    }
+    .main-content__icon-container img{
+        width:40% !important;
+        padding: 30px 15px 0 0;
+        }
+   
+   
+  }
+
+  @media screen and (max-height: 800px ) {
+    .main-content__home{
+    font-size:100px;
+    }
+    .main-content__links{
+    font-size:24px;
+    }
+    span.phone::before {
+      content:"\A"; 
+      white-space: pre;
+   }
+
+  }
