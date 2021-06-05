@@ -8,7 +8,7 @@ import { CharactersService } from 'src/app/shared/services/characters.service';
 })
 export class CharactersPageComponent implements OnInit {
 
-  characters: any[] = [];
+  characters: any = [];
   constructor(private charactersService: CharactersService) { }
 
   ngOnInit(): void {

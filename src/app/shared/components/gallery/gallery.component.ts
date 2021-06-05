@@ -9,7 +9,8 @@ export class GalleryComponent implements OnInit {
 
   constructor() { }
 
-  @Input() itemList: any[] = [];
+  @Input() itemList: any = [];
+  @Input() characters: any = [];
 
   ngOnInit(): void {
   }

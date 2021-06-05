@@ -1,1 +1,33 @@
-<p>characters-detail works!</p>
+<div>
+  <img src="{{ character.image }}" alt="" />
+  <h1 style="color: white">{{ character.name }}</h1>
+</div>
+<div style="color: white" class="container">
+    <div class="row">
+        <div>
+            <h2>CASA</h2>
+            <img src="" alt="IMAGEN DE CASA">
+        </div>
+        <div>
+            <h2>ALIANZAS</h2>
+            <p>{{character.allegiances}}</p>
+        </div>
+        <div>
+            <h2>APARICIONES</h2>
+            <p>{{character.appearances}}</p>
+        </div>
+        <div>
+            <h2>PADRE</h2>
+            <p>{{character.father}}</p>
+        </div>
+        <div>
+            <h2>PARIENTES</h2>
+            <p>{{character.siblings}}</p>
+        </div>
+        <div>
+            <h2>TITULOS</h2>
+            <p>{{character.titles}}</p>
+        </div>
+    </div>
+    
+</div>
