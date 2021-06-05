@@ -21,6 +21,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HousesGalleryComponent } from './shared/components/houses-gallery/houses-gallery.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     GalleryComponent,
+    HousesGalleryComponent,
 
   ],
   imports: [
