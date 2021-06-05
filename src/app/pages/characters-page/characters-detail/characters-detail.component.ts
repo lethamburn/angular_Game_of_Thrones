@@ -10,6 +10,8 @@ import { HousesService } from 'src/app/shared/services/houses.service';
 })
 export class CharactersDetailComponent implements OnInit {
   character: any;
+  house: any;
+  url: any = 'http://localhost:4200/houses'
   constructor(
     private route: ActivatedRoute,
     private charactersService: CharactersService,
