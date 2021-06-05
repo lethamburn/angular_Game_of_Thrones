@@ -7,7 +7,8 @@ import { HousesService } from 'src/app/shared/services/houses.service';
   styleUrls: ['./houses-page.component.scss'],
 })
 export class HousesPageComponent implements OnInit {
-  houses: any[] = [];
+  
+  houses: any = [];
   constructor(private housesService: HousesService) {}
 
   ngOnInit(): void {

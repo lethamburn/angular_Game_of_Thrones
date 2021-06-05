@@ -1,4 +1,4 @@
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -14,4 +14,9 @@ getHouses() {
   return this.http.get('https://api.got.show/api/show/houses/');
 }
 
+getHouse = (nameHouse: any) => {
+  return this.http.get(
+    `https://api.got.show/api/show/houses/${nameHouse}`
+  );
+};
 }

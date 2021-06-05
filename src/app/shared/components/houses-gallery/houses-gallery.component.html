@@ -2,11 +2,9 @@
     <div class="row">
         <div *ngFor="let item of itemList" class="gallery  col-sm-4 col-md-3 col-lg-2" >
             <figure>
-                <img src="{{item.logoURL}}" onError="this.onerror=null;this.src='https://data.whicdn.com/images/296018994/original.gif';" >
+                <img routerLink="{{item.name}}" src="{{item.logoURL}}" onError="this.onerror=null;this.src='https://data.whicdn.com/images/296018994/original.gif';" >
                 <h2>{{item.name}}</h2>
             </figure>
         </div>
     </div>
 </div>
-<!-- 
-{{item.logoURL}} == null ? 'https://assets.danfoss.com/photos/preview/116968/ID285239036283-0101_preview.jpg' : {{item.logoURL}} -->
