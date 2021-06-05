@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactersService } from 'src/app/shared/services/characters.service';
-import { FiltercharactersPipe } from 'src/app/pipes/filtercharacters.pipe';
 
 @Component({
   selector: 'app-characters-page',
