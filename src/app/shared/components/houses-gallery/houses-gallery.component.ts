@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, } from '@angular/core';
+
 
 @Component({
   selector: 'app-houses-gallery',
@@ -9,8 +10,8 @@ export class HousesGalleryComponent implements OnInit {
 
   constructor() { }
 
-  @Input() itemList: any [] = [];
-  @Input() houses: any [] = [];
+  @Input() itemList: any[] = [];
+  @Input() houses: any[] = [];
 
   ngOnInit(): void {
   }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
@@ -22,7 +22,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HousesGalleryComponent } from './shared/components/houses-gallery/houses-gallery.component';
-import { FormsModule } from '@angular/forms';
+import { FiltercharactersPipe } from './pipes/filtercharacters.pipe'
 
 
 @NgModule({
@@ -46,15 +46,17 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     GalleryComponent,
     HousesGalleryComponent,
-
+    FiltercharactersPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

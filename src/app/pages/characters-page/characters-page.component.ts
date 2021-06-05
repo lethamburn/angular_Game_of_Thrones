@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CharactersService } from 'src/app/shared/services/characters.service';
+import { FiltercharactersPipe } from 'src/app/pipes/filtercharacters.pipe';
 
 @Component({
   selector: 'app-characters-page',
@@ -8,8 +9,8 @@ import { CharactersService } from 'src/app/shared/services/characters.service';
 })
 export class CharactersPageComponent implements OnInit {
   characters: any = [];
-  textfilter : any;
-  constructor(private charactersService: CharactersService) {}
+
+  constructor(private charactersService: CharactersService) { }
 
   ngOnInit(): void {
     this.charactersService.getCharacters().subscribe((charactersData: any) => {

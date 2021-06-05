@@ -6,10 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
-  constructor() {}
-
+  constructor() { }
+  textfilter: any;
   @Input() itemList: any[] = [];
   @Input() characters: any[] = [];
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
