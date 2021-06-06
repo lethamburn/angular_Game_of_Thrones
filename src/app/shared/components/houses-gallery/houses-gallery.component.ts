@@ -13,6 +13,10 @@ export class HousesGalleryComponent implements OnInit {
   @Input() itemList: any[] = [];
   @Input() houses: any[] = [];
 
+  options = { 
+    autoHide: false, 
+    scrollbarMinSize: 100,
+  };
   ngOnInit(): void {
   }
 

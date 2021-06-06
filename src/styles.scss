@@ -8,27 +8,25 @@ body{
 
 
 
-
-@media screen and (max-width:768px) {
-    .main-content__home{
-      font-size:80px !important;
-    }
-    .main-content__links{
-      font-size:20px !important;
-      }
-    span.phone::before {
-       content:"\A"; 
-       white-space: pre;
-       
-    }
-    .main-content__icon-container img{
-      width: 30%;
-      padding: 15px 5px 0 0;
-      }
+@media screen and (max-width:767px) {
+  .main-content__home{
+    font-size:100px !important;
   }
+  .main-content__links{
+    font-size:20px !important;
+    }
+  span.phone::before {
+     content:"\A"; 
+     white-space: pre;
+     
+  }
+  .main-content__icon-container img{
+    width: 40%;
+    padding: 0 5px 0 0;
+    }
+}
   
-
-@media screen and (max-width:992px ) {
+@media screen and (max-width:991px ) {
   .main-content__home{
     font-size:120px !important;
     }
@@ -39,24 +37,14 @@ body{
       content:"\A"; 
       white-space: pre;
     }
-    .main-content__icon-container img{
-        width:40% !important;
-        padding: 30px 15px 0 0;
-        }
+    .main-content__icon-container{
+      margin-top: 20px!important;
+    }
+    .main-content__icon img{
+      width:60% !important;
+      padding: 0 15px 0 0 !important;
+      }
    
    
   }
 
-  @media screen and (max-height: 800px ) {
-    .main-content__home{
-    font-size:100px;
-    }
-    .main-content__links{
-    font-size:24px;
-    }
-    span.phone::before {
-      content:"\A"; 
-      white-space: pre;
-   }
-
-  }

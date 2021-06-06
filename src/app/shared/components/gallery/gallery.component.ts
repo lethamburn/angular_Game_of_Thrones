@@ -10,6 +10,10 @@ export class GalleryComponent implements OnInit {
   textfilter: any;
   @Input() itemList: any[] = [];
   @Input() characters: any[] = [];
+  options = { 
+    autoHide: false, 
+    scrollbarMinSize: 100,
+  };
 
   ngOnInit(): void { }
 }

@@ -1,3 +1,4 @@
+import { SimplebarAngularModule } from 'simplebar-angular';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -59,6 +60,7 @@ import { SortPipe } from './pipes/sort.pipe';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    SimplebarAngularModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

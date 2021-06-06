@@ -1,6 +1,6 @@
 {
   "name": "angular-game-of-thrones",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,6 +23,8 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
+    "simplebar": "^5.3.3",
+    "simplebar-angular": "^2.3.3",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },
