@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HousesGalleryComponent } from './shared/components/houses-gallery/houses-gallery.component';
 import { FiltercharactersPipe } from './pipes/filtercharacters.pipe';
 import { DecodeHtmlString } from './pipes/decodehtmlstring.pipe';
+import { ChronologyGalleryComponent } from './shared/components/chronology-gallery/chronology-gallery.component';
 
 
 @NgModule({
@@ -48,14 +49,14 @@ import { DecodeHtmlString } from './pipes/decodehtmlstring.pipe';
     GalleryComponent,
     HousesGalleryComponent,
     FiltercharactersPipe,
-    DecodeHtmlString
+    DecodeHtmlString,
+    ChronologyGalleryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
