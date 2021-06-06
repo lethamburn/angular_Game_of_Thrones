@@ -6,9 +6,9 @@
   <div class="row">
     <div>
       <h2>CASA</h2>
-      <p>{{ character.house }}</p>
+     <p>{{character.house | decodeHtmlString}}</p>
       <img
-        src="{{ characterhousename[0].logoURL }}"
+        src="{{characterhousename[0].logoURL }}"
         alt="IMAGEN DE CASA"
         onError="this.onerror=null;this.src='https://64.media.tumblr.com/tumblr_lqmd5knRRF1qg7w52.gif'"
       />

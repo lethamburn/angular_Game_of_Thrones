@@ -23,6 +23,7 @@ import { GalleryComponent } from './shared/components/gallery/gallery.component'
 import { HttpClientModule } from '@angular/common/http';
 import { HousesGalleryComponent } from './shared/components/houses-gallery/houses-gallery.component';
 import { FiltercharactersPipe } from './pipes/filtercharacters.pipe';
+import { DecodeHtmlString } from './pipes/decodehtmlstring.pipe';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { FiltercharactersPipe } from './pipes/filtercharacters.pipe';
     GalleryComponent,
     HousesGalleryComponent,
     FiltercharactersPipe,
+    DecodeHtmlString
   ],
   imports: [
     BrowserModule,
