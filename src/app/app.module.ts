@@ -25,6 +25,7 @@ import { HousesGalleryComponent } from './shared/components/houses-gallery/house
 import { FiltercharactersPipe } from './pipes/filtercharacters.pipe';
 import { DecodeHtmlString } from './pipes/decodehtmlstring.pipe';
 import { ChronologyGalleryComponent } from './shared/components/chronology-gallery/chronology-gallery.component';
+import { SortPipe } from './pipes/sort.pipe';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { ChronologyGalleryComponent } from './shared/components/chronology-galle
     FiltercharactersPipe,
     DecodeHtmlString,
     ChronologyGalleryComponent,
+    SortPipe,
   ],
   imports: [
     BrowserModule,

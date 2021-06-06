@@ -16,18 +16,21 @@ export class ChronologyGalleryComponent implements OnInit {
   ngOnInit(): void {
     this.charactersService.getCharacters().subscribe((charactersData: any) => {
       console.log(charactersData);
-      function compare( a:any, b:any ) {
-        if ( a.age.age < b.age.age ){
-          return -1;
-        }
-        if ( a.age.age > b.age.age ){
-          return 1;
-        }
-        return 0;
-      }
+      for (const characterData of charactersData) {
+        if(characterData.age.age){
       const charactersort = charactersData;
       console.log(charactersort[0].age.age);
       this.characters = charactersort.sort();
-    });
+    }};
   }
-}
+    )}};
+
+/* function compare( a:any, b:any ) {
+  if ( a.age.age < b.age.age ){
+    return -1;
+  }
+  if ( a.age.age > b.age.age ){
+    return 1;
+  }
+  return 0;
+} */
