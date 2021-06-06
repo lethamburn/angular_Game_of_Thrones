@@ -10,6 +10,7 @@ import { CharactersService } from 'src/app/shared/services/characters.service';
 export class CharactersDetailComponent implements OnInit {
   character: any = '';
   characterhouse: any = '';
+
   constructor(
     private route: ActivatedRoute,
     private charactersService: CharactersService

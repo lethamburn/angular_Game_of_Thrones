@@ -22,6 +22,4 @@ export class CharactersService {
       `https://api.got.show/api/show/houses/${characterHouse}`
     );
   };
-
-  
 }
