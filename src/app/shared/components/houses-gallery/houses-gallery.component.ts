@@ -9,7 +9,7 @@ import { Component, Input, OnInit, } from '@angular/core';
 export class HousesGalleryComponent implements OnInit {
 
   constructor() { }
-
+  textfilter: any;
   @Input() itemList: any[] = [];
   @Input() houses: any[] = [];
 
