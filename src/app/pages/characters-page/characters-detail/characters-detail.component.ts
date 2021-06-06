@@ -34,7 +34,7 @@ export class CharactersDetailComponent implements OnInit {
               this.characterhousename = characterHouseData;
               console.log(this.characterhousename[0]);
             });
-        });
+        }); 
     });
   }
 }
