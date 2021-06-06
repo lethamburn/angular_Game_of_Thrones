@@ -1,32 +1,32 @@
 <div style="color: white" class="container">
   <div>
- <img src="{{house.image }}" alt="" /> 
-    <h1 style="color: white">{{ house.name }}</h1>
+ <img src="{{house[0].logoURL}}" alt="" onError="this.onerror=null;this.src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jamie-lannister-bran-1555331563.gif'"/> 
+    <h1 style="color: white">{{ house[0].name }}</h1>
   </div>
   <div class="row">
     <div>
       <h2>LEMA</h2>
-      <p>{{ house.sigil }}</p>
+      <p>{{ house[0].sigil }}</p>
     </div>
     <div>
       <h2>SEDE</h2>
-      <p>{{ house.seat }}</p>
+      <p>{{ house[0].seat }}</p>
     </div>
     <div>
       <h2>REGION</h2>
-      <p>{{ house.region }}</p>
+      <p>{{ house[0].region }}</p>
     </div>
     <div>
       <h2>ALIANZAS</h2>
-      <p>{{ house.allegiance }}</p>
+      <p>{{ house[0].allegiance }}</p>
     </div>
     <div>
       <h2>RELIGIONES</h2>
-      <p>{{ house.religion }}</p>
+      <p>{{ house[0].religion }}</p>
     </div>
     <div>
       <h2>FUNDACION</h2>
-      <p>{{ house.createdAt }}</p>
+      <p>{{ house[0].createdAt | date: 'dd/MM/yyyy'}}</p>
     </div>
   </div>
 </div>

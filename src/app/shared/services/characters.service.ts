@@ -5,12 +5,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CharactersService {
-
-  constructor(private http: HttpClient) { }
-
+  constructor(private http: HttpClient) {}
 
   getCharacters() {
-
     return this.http.get('https://api.got.show/api/show/characters/');
   }
 
@@ -20,5 +17,11 @@ export class CharactersService {
     );
   };
 
+  getCharacterHouse = (characterHouse: any) => {
+    return this.http.get(
+      `https://api.got.show/api/show/houses/${characterHouse}`
+    );
+  };
 
+  
 }

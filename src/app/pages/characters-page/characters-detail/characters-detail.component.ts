@@ -8,7 +8,8 @@ import { CharactersService } from 'src/app/shared/services/characters.service';
   styleUrls: ['./characters-detail.component.scss'],
 })
 export class CharactersDetailComponent implements OnInit {
-  character: any;
+  character: any = '';
+  characterhouse: any = '';
   constructor(
     private route: ActivatedRoute,
     private charactersService: CharactersService
@@ -24,5 +25,10 @@ export class CharactersDetailComponent implements OnInit {
           console.log(characterData);
         });
     });
+
+    /*    function getCharacterHouseName(){
+      const houseName = character.house;
+    }
+  } */
   }
 }

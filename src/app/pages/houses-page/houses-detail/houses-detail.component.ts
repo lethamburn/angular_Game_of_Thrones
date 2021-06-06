@@ -8,7 +8,7 @@ import { HousesService } from 'src/app/shared/services/houses.service';
   styleUrls: ['./houses-detail.component.scss'],
 })
 export class HousesDetailComponent implements OnInit {
-  house: any;
+  house: any = [0];
   constructor(
     private route: ActivatedRoute,
     private housesService: HousesService
