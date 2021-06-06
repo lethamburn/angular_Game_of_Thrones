@@ -21,6 +21,7 @@ export class HousesDetailComponent implements OnInit {
       .getHouse(nameHouse)
       .subscribe((houseData) => {
         this.house = houseData;
+        console.log(houseData)
       });
     });
   }
