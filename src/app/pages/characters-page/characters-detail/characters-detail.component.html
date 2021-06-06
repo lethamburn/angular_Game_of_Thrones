@@ -7,7 +7,11 @@
     <div>
       <h2>CASA</h2>
       <p>{{ character.house }}</p>
-<!--       <img src="{{house.image}}" alt="IMAGEN DE CASA" /> -->
+      <img
+        src="{{ characterhousename[0].logoURL }}"
+        alt="IMAGEN DE CASA"
+        onError="this.onerror=null;this.src='https://64.media.tumblr.com/tumblr_lqmd5knRRF1qg7w52.gif'"
+      />
     </div>
     <div>
       <h2>ALIANZAS</h2>

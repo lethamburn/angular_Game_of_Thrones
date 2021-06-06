@@ -10,6 +10,7 @@ import { CharactersService } from 'src/app/shared/services/characters.service';
 export class CharactersDetailComponent implements OnInit {
   character: any = '';
   characterhouse: any = '';
+  characterhousename: any = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -23,13 +24,17 @@ export class CharactersDetailComponent implements OnInit {
         .getCharacter(nameCharacter)
         .subscribe((characterData) => {
           this.character = characterData;
-          console.log(characterData);
+          this.characterhouse = this.character.house;
+          console.log(this.characterhouse);
+
+          const nameHouse = this.characterhouse;
+          this.charactersService
+            .getCharacterHouse(nameHouse)
+            .subscribe((characterHouseData) => {
+              this.characterhousename = characterHouseData;
+              console.log(this.characterhousename[0]);
+            });
         });
     });
-
-    /*    function getCharacterHouseName(){
-      const houseName = character.house;
-    }
-  } */
   }
 }
