@@ -1,0 +1,42 @@
+@import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
+.sub__container {
+  margin-top: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.portrait {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.portrait h1 {
+  font-family: "Game of Thrones";
+  font-size: 36px;
+  color: white;
+  margin-top: 20px;
+}
+.flag {
+  width: 160px;
+}
+.boxes {
+  text-align: center;
+}
+.boxes h2 {
+  font-family: "Game of Thrones";
+  font-size: 24px;
+  color: white;
+  margin-top: 20px;
+}
+.boxes p {
+  font-family: sans-serif;
+  color: white;
+  font-size: 16px;
+  overflow: hidden;
+}
+.arrow {
+  font-family: sans-serif;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}

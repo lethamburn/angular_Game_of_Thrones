@@ -1,39 +1,64 @@
 <div class="container">
-  <div class="row">
-    <div style="color: white" class="col-2">
-        <img src="{{ character.image }}" alt="" />
-        <h1 style="color: white">{{ character.name }}</h1>
-  </div>    
-        <div class="row">
-            <div class="col-2">
-              <h2>CASA</h2>
-            <p>{{character.house | decodeHtmlString}}</p>
-              <img
-                src="{{characterhousename[0].logoURL }}"
-                alt="IMAGEN DE CASA"
-                onError="this.onerror=null;this.src='https://64.media.tumblr.com/tumblr_lqmd5knRRF1qg7w52.gif'"
-              />
-            </div>
-            <div class="col-2">
-              <h2>ALIANZAS</h2>
-              <p>{{ character.allegiances }}</p>
-            </div>
-            <div class="col-2">
-              <h2>APARICIONES</h2>
-              <p>{{ character.appearances }}</p>
-            </div>
-            <div class="col-2">
-              <h2>PADRE</h2>
-              <p>{{ character.father }}</p>
-            </div>
-            <div class="col-2">
-              <h2>PARIENTES</h2>
-              <p>{{ character.siblings }}</p>
-            </div>
-            <div class="col-2">
-              <h2>TITULOS</h2>
-              <p>{{ character.titles }}</p>
-            </div>
-        </div>
+  <div class="sub__container">
+    <a class="arrow" href="/characters"><img  src="../../../assets/back.svg" alt="">Volver
+    </a>
+  </div>
+  <div class="header__icons-container">
+    <div class="header__icons">
+      <a href="/">
+        <img src="../../../assets/group.svg" alt="Home" class="header__icon" />
+      </a>
+      <a href="https://www.youtube.com/watch?v=125gEb7Mbpg">
+        <img
+          src="../../../assets/spain.svg"
+          alt="banderaEspañola"
+          class="header__icon"
+        />
+      </a>
+      <a href="https://www.youtube.com/watch?v=EHvDKZVPG_A"
+        ><img
+          src="../../../assets/uk.svg"
+          alt="banderaInglesa"
+          class="header__icon"
+      /></a>
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="portrait">
+    <img src="{{ character.image }}" alt="" />
+    <h1 class="character_title" style="color: white">{{ character.name }}</h1>
+  </div>
+  <div class="row boxes">
+    <div class="col-2">
+      <h2>CASA</h2>
+      <p>{{ character.house | decodeHtmlString }}</p>
+      <img
+        class="flag"
+        src="{{ characterhousename[0].logoURL }}"
+        alt="IMAGEN DE CASA"
+        onError="this.onerror=null;this.src='https://64.media.tumblr.com/tumblr_lqmd5knRRF1qg7w52.gif'"
+      />
+    </div>
+    <div class="col-2">
+      <h2>ALIANZAS</h2>
+      <p>{{ character.allegiances }}</p>
+    </div>
+    <div class="col-2">
+      <h2>APARICIONES</h2>
+      <p>{{ character.appearances }}</p>
+    </div>
+    <div class="col-2">
+      <h2>PADRE</h2>
+      <p>{{ character.father }}</p>
+    </div>
+    <div class="col-2">
+      <h2>PARIENTES</h2>
+      <p>{{ character.siblings }}</p>
+    </div>
+    <div class="col-2">
+      <h2>TITULOS</h2>
+      <p>{{ character.titles }}</p>
+    </div>
+  </div>
 </div>
