@@ -5,6 +5,9 @@
   flex-flow: row wrap;
   justify-content: space-between;
 }
+.header__icon{
+  padding-left: 20px;
+}
 .portrait {
   justify-content: center;
   text-align: center;
@@ -15,6 +18,7 @@
   font-size: 36px;
   color: white;
   margin-top: 20px;
+  margin-bottom: 49px;
 }
 .flag {
   width: 160px;
@@ -27,6 +31,7 @@
   font-size: 24px;
   color: white;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .boxes p {
   font-family: sans-serif;
@@ -39,6 +44,7 @@
   color: white;
   font-size: 24px;
   text-decoration: none;
+  padding-right: 10px;
 }
 
 
