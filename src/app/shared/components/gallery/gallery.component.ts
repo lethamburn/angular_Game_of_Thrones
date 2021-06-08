@@ -12,7 +12,8 @@ export class GalleryComponent implements OnInit {
   @Input() characters: any[] = [];
   options = { 
     autoHide: false, 
-    scrollbarMinSize: 100,
+    scrollbarMinSize: 80,
+    
   };
 
   ngOnInit(): void { }
