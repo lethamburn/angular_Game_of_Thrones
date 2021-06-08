@@ -11,6 +11,11 @@ export class CharactersDetailComponent implements OnInit {
   character: any = '';
   characterhouse: any = '';
   characterhousename: any = '';
+  options = { 
+    autoHide: false, 
+    scrollbarMinSize: 30,
+    
+  };
 
   constructor(
     private route: ActivatedRoute,

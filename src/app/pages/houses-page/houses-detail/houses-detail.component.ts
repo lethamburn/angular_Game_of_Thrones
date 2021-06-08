@@ -9,6 +9,11 @@ import { HousesService } from 'src/app/shared/services/houses.service';
 })
 export class HousesDetailComponent implements OnInit {
   house: any = [0];
+  options = { 
+    autoHide: false, 
+    scrollbarMinSize: 30,
+    
+  };
   constructor(
     private route: ActivatedRoute,
     private housesService: HousesService

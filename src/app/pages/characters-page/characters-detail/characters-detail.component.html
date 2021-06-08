@@ -44,10 +44,17 @@
       <h2>ALIANZAS</h2>
       <p>{{ character.allegiances }}</p>
     </div>
+    
+  
     <div class="col-2">
       <h2>APARICIONES</h2>
+      <ngx-simplebar [options]="options">
       <p>{{ character.appearances }}</p>
+    </ngx-simplebar>
     </div>
+ 
+  
+
     <div class="col-2">
       <h2>PADRE</h2>
       <p>{{ character.father }}</p>
