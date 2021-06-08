@@ -1,12 +1,12 @@
 
+
 @import 'app/styles/settings/body.settings';
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body{
     background-color: black  !important;
+    cursor: url(https://cur.cursors-4u.net/sports/spo-1/spo28.ani), url(https://cur.cursors-4u.net/sports/spo-1/spo28.png), auto !important;
 }
-
-
 
 @media screen and (max-width:767px) {
   .main-content__home{
@@ -24,6 +24,12 @@ body{
     width: 40%;
     padding: 0 5px 0 0;
     }
+
+    .form-search {
+      width: 50% !important;
+ 
+    }
+
 }
   
 @media screen and (max-width:991px ) {
@@ -44,7 +50,27 @@ body{
       width:60% !important;
       padding: 0 15px 0 0 !important;
       }
+      .form-search {
+        width: 60% !important;
    
-   
+      }
+
+  }
+  .simplebar-horizontal{
+    visibility: hidden !important;
   }
 
+  .simplebar-scrollbar:before{
+    background-color:#ffffff !important;
+  }
+  .simplebar-scrollbar{
+    position: absolute;
+    width: 8px !important;
+  
+  }
+.simplebar-track{
+  background-color:#443d3d!important;
+  width: 8px !important;
+  margin-top: 30px!important;
+  border-radius: 8px;
+}
